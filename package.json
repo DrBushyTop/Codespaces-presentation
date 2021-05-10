@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.6.10",
+    "@slidev/theme-default": "^0.6.7",
+    "@slidev/theme-seriph": "^0.6.7"
+  },
+  "name": "codespaces-environments"
+}
