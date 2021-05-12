@@ -28,9 +28,9 @@ image: https://db3pap002files.storage.live.com/y4mvftauMZYLJRnW3dSfXaWuToPelsTgK
 - 🔨 **DevOps Architect @ [Zure](https://www.zure.com)**
 - 🐱‍💻 **[Azure MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003781?fullName=Pasi%20%20Huuhka)** 
 - 🚀 **[User Group](https://www.meetup.com/Finland-Azure-User-Group/) Organizer** 
-- 💙 **Focus on anything Azure**
+- <logos-azure-icon style="display:inline"/> **Focus on anything Azure**
 - 📝 **Blog @ [huuhka.net](https://www.huuhka.net)**
-- <img src="https://cdn1.iconfinder.com/data/icons/company-identity/100/new-twitter-logo-vector-512.png" style="width:22px; display:inline" > [@DrBushyTop](https://twitter.com/DrBushyTop)
+- <logos-twitter style="display:inline"/> [@DrBushyTop](https://twitter.com/DrBushyTop)
 
 </v-clicks>
 
@@ -115,7 +115,9 @@ class: text-center
 - Setting up environments as config, allowing everyone to have a similar development setup
   - Pretty much like containers do, without you actually having to containerize your application
   - Bugfixes to older projects no longer require (as much) arcane knowledge
+
 - Arranging trainings
+
 - Sharing cool VS code modules, of course
 
 </v-clicks>
@@ -129,7 +131,10 @@ class: text-center
 
 - Config isn't just a feature of codespaces, it's built in to VS code too
   - The base is the `.devcontainer` folder in the root of your repo
+
 - You can use a default container, select from ready made ones, or just customize your own from scratch
+
+- There are decent community made lists of devcontainers too, like [this set](https://github.com/benc-uk/devcontainers) by [Ben Coleman](https://github.com/benc-uk)
 
 </v-clicks>
 
@@ -141,6 +146,39 @@ class: text-center
 # Let's create a configuration for our project
 
 ---
+---
+
+# But what about my cool toys?
+
+<v-clicks>
+
+### Don't worry, you can have those too
+
+</v-clicks>
+
+<v-clicks>
+
+- Enter dotfiles and VS code settings sync
+
+- Whenever a file with a certain name, in my case "Setup.sh" is found in the dotfiles repository, it will be fun before `devcontainer` customizations
+
+- If no setup file is found, files and directories starting with . will get symlinked to your home folder in codespaces
+
+- You might want to consider using some tooling for this, but I've just written some spaghetti code
+
+</v-clicks>
+
+---
+layout: image-right
+image: https://source.unsplash.com/collection/94734566/1920x1080
+---
+# Useful Links
+- [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
+- [Remote - Containers VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [Personalization of Codespaces](https://docs.github.com/en/codespaces/setting-up-your-codespace/personalizing-codespaces-for-your-account)
+- [Dotfiles In-depth](https://dotfiles.github.io/) 
+- [My Blog](https://www.huuhka.net)
+
 
 ---
 layout: image-right
