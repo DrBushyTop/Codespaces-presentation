@@ -1,15 +1,16 @@
 ---
 # try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-background: 'https://images.unsplash.com/photo-1564934304050-e9bb87a29c13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+background: 'https://db3pap002files.storage.live.com/y4m3ZzJqxbSgWCyOnNIpyiIXt5E-k3YzlmJXd_MXh0fGLb-kbB_zCLVLpGUvxP8DUOtQg1Dh4dRZdm9xbzz5QX3hXHg46kI0nB1u6vz2R8hP8dk1pBgYrX0KHbHn2xYab6ngYnGzjFMcGNz528NPcLCeD9rJ2SCdUUJcQsMC1yThR34LY9qM9igynAL5-2HpJdZ?width=2560&height=1440&cropmode=none'
 # apply any windi css classes to the current slide
 class: 'text-center'
 ---
 
-# Make Dev onboarding a breeze
 
-with GitHub Codespaces!
+---
+layout: 'image' 
+image: 'https://db3pap002files.storage.live.com/y4mawuzPnpoVkNySnMQne3_lwiz0fUpOo2y3mKJ0iU_BD8t8G67WMQa0mondCxYzPUaAfF_czJUNZiuAhvJSff3D89cThbSbpFZWCfNnTnN559Qxx3Vs4gI1VyrPFAXY1LM9LsaohyS2PaM_8rYk0k1lq5ALoRjQEgG8ThDGC2b7B47kEe-QHfTohRH4k3ua6hY?width=2560&height=1440&cropmode=none'
+---
 
 <a href="https://github.com/DrBushyTop" target="_blank" alt="GitHub"
   class="abs-br m-6 text-xl icon-btn opacity-50 !border-none !hover:text-white">
@@ -105,6 +106,20 @@ class: text-center
 
 ---
 ---
+# Some details
+
+<v-clicks>
+
+- 👩‍💻 Can connect from your local VS Code instance too
+- 💸 Free during the beta, [will be billed by use later](https://github.blog/changelog/2020-09-15-about-codespaces-pricing/)
+- 💻 Multiple VM sizes available even during the beta, though specifics are still unclear
+- 🐛 Still in beta, so some of the bugs we might spot are most likely still being polished out
+- 🚀 GA in Q3-2021 according to [the GitHub public roadmap](https://github.com/github/roadmap/issues/55)
+
+</v-clicks>
+
+---
+---
 
 # So what's my angle?
 
@@ -129,8 +144,9 @@ class: text-center
 
 <v-clicks>
 
-- Config isn't just a feature of codespaces, it's built in to VS code too
+- Config isn't just a feature of codespaces, it's built in to VS code
   - The base is the `.devcontainer` folder in the root of your repo
+  - You can actually use these for local development inside a container just as well, and reap a subset of the benefits
 
 - You can use a default container, select from ready made ones, or just customize your own from scratch
 
@@ -160,7 +176,10 @@ class: text-center
 
 - Enter dotfiles and VS code settings sync
 
-- Whenever a file with a certain name, in my case "Setup.sh" is found in the dotfiles repository, it will be fun before `devcontainer` customizations
+- `yourGitHubUser/dotfiles` repository will get synced to every codespace you create
+
+- Whenever a file with a certain name, in my case "Setup.sh" is found in the dotfiles repository, it will be fun after(?) `devcontainer` customizations
+  - Documentation does say "before" but this doesn't seem to be the case
 
 - If no setup file is found, files and directories starting with . will get symlinked to your home folder in codespaces
 
@@ -169,138 +188,58 @@ class: text-center
 </v-clicks>
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-# Useful Links
-- [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
-- [Remote - Containers VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-- [Personalization of Codespaces](https://docs.github.com/en/codespaces/setting-up-your-codespace/personalizing-codespaces-for-your-account)
-- [Dotfiles In-depth](https://dotfiles.github.io/) 
-- [My Blog](https://www.huuhka.net)
-
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Code
+# Settings Sync
 
-Use code snippets and get the highlighting directly!
+<v-clicks>
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+- Built in to VS Code (so NOT the extension in the marketplace)
 
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = {...user, ...update}  
-  saveUser(id, newUser)
-}
-```
+- Allows you to log in to your GitHub or Microsoft account to sync all settings from keybindings to extensions and themes
 
----
+- Sync is almost instant from one device to another
 
-# Components
+- Can ignore certain settings easily
 
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly use. And add your custom components are also super easy.
-
-```md
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/custom/#components) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1385774635015307265" />
-```
-
-<Tweet id="1385774635015307265" scale="0.65" />
-
-</div>
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes are able to provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://sli.dev/themes/default.png">
-
-<img border="rounded" src="https://sli.dev/themes/seriph.png">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
+</v-clicks>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Dotfiles & Settings Sync demo
 
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+---
+layout: image-right
+image: https://docs.github.com/assets/images/help/settings/codespaces-audit-log-org.png
+---
+# Management & Security
+
+<v-clicks>
+
+- [Security logs](https://docs.github.com/en/codespaces/managing-your-codespaces/reviewing-your-security-logs-for-codespaces) are available for you personally
+- [Audit logs](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/reviewing-your-organizations-audit-logs-for-codespaces) are available for your organization
+- [Personal Secrets](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces) can be set on a repository level for Codespaces
+
+</v-clicks>
+
+---
+layout: image-right
+image: https://source.unsplash.com/collection/94734566/1920x1080
+---
+# Useful Links
+- [Devcontainer development](https://docs.github.com/en/codespaces/setting-up-your-codespace/configuring-codespaces-for-your-project)
+- [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
+- [Remote - Containers VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [Personalization of Codespaces](https://docs.github.com/en/codespaces/setting-up-your-codespace/personalizing-codespaces-for-your-account)
+- [Dotfiles In-depth](https://dotfiles.github.io/) 
+- [My Blog](https://www.huuhka.net)
+
+---
+layout: center
+class: text-center
+---
+
+# Slides: [zure.ly/pasi/techorama](http://zure.ly/pasi/techorama)
