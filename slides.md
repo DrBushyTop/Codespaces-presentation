@@ -40,10 +40,10 @@ image: https://db3pap002files.storage.live.com/y4mvftauMZYLJRnW3dSfXaWuToPelsTgK
 
 <v-clicks>
 
-### Currently working on:
+### Currently working on @ Zure:
 - Kubernetes with GitOps
 - Championing GitHub
-- Mentoring Projects
+- Mentoring Projects & Leading the DevOps Guild
 - Driving ARM -> Bicep transition for all our teams
 
 </v-clicks>
