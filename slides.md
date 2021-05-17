@@ -115,6 +115,7 @@ class: text-center
 - 💻 Multiple VM sizes available even during the beta, though specifics are still unclear
 - 🐛 Still in beta, so some of the bugs we might spot are most likely still being polished out
 - 🚀 GA in Q3-2021 according to [the GitHub public roadmap](https://github.com/github/roadmap/issues/55)
+- <logos-visual-studio style="display:inline"/> Works with full Visual Studio too!
 
 </v-clicks>
 
