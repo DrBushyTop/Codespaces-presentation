@@ -31,7 +31,7 @@ image: https://db3pap002files.storage.live.com/y4mvftauMZYLJRnW3dSfXaWuToPelsTgK
 - 🚀 **[User Group](https://www.meetup.com/Finland-Azure-User-Group/) Organizer** 
 - <logos-azure-icon style="display:inline"/> **Focus on anything Azure**
 - 📝 **Blog @ [huuhka.net](https://www.huuhka.net)**
-- <logos-twitter style="display:inline"/> [@DrBushyTop](https://twitter.com/DrBushyTop)
+- <logos-twitter style="display:inline"/> [**@DrBushyTop**](https://twitter.com/DrBushyTop)
 
 </v-clicks>
 
@@ -77,7 +77,7 @@ image: https://db3pap002files.storage.live.com/y4mGcZXCfu03vieQQ3b0JkpOOpyffg18o
 
 # Codespaces!
 
-### "Your instant dev environment"
+### "Your instant dev environment" (BETA)
 
 The marketing team inside my head would explain codespaces as...
 
@@ -127,7 +127,7 @@ class: text-center
 
 <v-clicks>
 
-- Setting up environments as config, allowing everyone to have a similar development setup
+- Setting up environments as code, allowing everyone to have a similar development setup
   - Pretty much like containers do, without you actually having to containerize your application
   - Bugfixes to older projects no longer require (as much) arcane knowledge
 
@@ -221,7 +221,8 @@ image: https://docs.github.com/assets/images/help/settings/codespaces-audit-log-
 
 - [Security logs](https://docs.github.com/en/codespaces/managing-your-codespaces/reviewing-your-security-logs-for-codespaces) are available for you personally
 - [Audit logs](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/reviewing-your-organizations-audit-logs-for-codespaces) are available for your organization
-- [Personal Secrets](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces) can be set on a repository level for Codespaces
+- [Personal & Organizational Secrets](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces) can be set on a repository level for Codespaces
+- [Private Container Registry](https://docs.github.com/en/codespaces/codespaces-reference/allowing-your-codespace-to-access-a-private-image-registry)
 
 </v-clicks>
 
