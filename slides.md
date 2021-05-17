@@ -233,6 +233,7 @@ layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 # Useful Links
+- [Register for the Beta](https://github.com/features/codespaces)
 - [Devcontainer development](https://docs.github.com/en/codespaces/setting-up-your-codespace/configuring-codespaces-for-your-project)
 - [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
 - [Remote - Containers VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
