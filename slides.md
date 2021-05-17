@@ -44,7 +44,8 @@ image: https://db3pap002files.storage.live.com/y4mvftauMZYLJRnW3dSfXaWuToPelsTgK
 - Kubernetes with GitOps
 - Championing GitHub
 - Mentoring Projects & Leading the DevOps Guild
-- Driving ARM -> Bicep transition for all our teams
+- Implementing SRE practices
+- Driving ARM -> Bicep transition for all
 
 </v-clicks>
 
